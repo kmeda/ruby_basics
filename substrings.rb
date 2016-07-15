@@ -8,7 +8,6 @@ def substrings(phrase, dictionary)
 			substring = (phrase[i..j]).downcase
 			if dictionary.include?(substring)
 				result[substring] = result.fetch(substring, 0) + 1
-				puts result
 			end
 		end	
 	end
